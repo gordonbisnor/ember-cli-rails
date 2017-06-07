@@ -29,7 +29,7 @@ module EmberCli
   alias_method :[], :app
 
   def skip?
-    ENV["SKIP_EMBER"].present?
+    true # ENV["SKIP_EMBER"].present?
   end
 
   def install_dependencies!
